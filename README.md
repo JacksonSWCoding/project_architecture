@@ -106,4 +106,9 @@ AI driven solution to determine sale prices and BOGO prices of store inventory.
 
 RESTful endpoints supporting when store inventory should go on sale due to calendar date.
 
+For example (AI is handling this):
+- Flowers and chocolate purchased between the dates (MM/DD format) 02/01 - 02/14 will have a 40% price increase.
+- Hot dogs and buns purchased between the dates (MM/DD format) 02/01 - 02/14 will NOT see a price change.
+
 Written in Python.
+
