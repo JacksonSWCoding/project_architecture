@@ -1,5 +1,9 @@
 # Project Description and Architecture
-These are supporting projects that are architectured. 
+These are the supporting projects, each with a defined architecture. 
+
+These projects are actively being implemented. 
+
+The architecture will evolve to show how the microservices interact with each other. 
 
 
 ## Table of Contents
@@ -13,7 +17,7 @@ These are supporting projects that are architectured.
 
 ## Store Management System
 
-RESTful endpoints supporting store inventory management system.
+Microservice RESTful endpoints supporting store inventory management system.
 
 Written in Java and Springboot.
 
@@ -56,7 +60,7 @@ Postgres is the database.
 
 ## Customer Management System (In Progress)
 
-RESTful endpoints supporting shopping cart management system.
+Microservice RESTful endpoints supporting shopping cart management system.
 
 Written in C#.
 
@@ -77,12 +81,12 @@ Postgres is the database.
   <tr>
     <td>POST</td>
     <td>/api/ShoppingCart/AddItem</td>
-    <td> Input is JSON data consisting your cartId, productId, and productCount you're willing to insert to shopping cart.</td>
+    <td> Input is JSON data consisting your cartId, productId, and productCount you want to insert into your shopping cart.</td>
   </tr>
 <tr>
     <td>DELETE</td>
     <td>/api/ShoppingCart/FromShoppingCart</td>
-    <td> Input is JSON data consisting your cartId, productID, and productCount you're willing to delete from your shopping cart.</td>
+    <td> Input is JSON data consisting your cartId, productID, and productCount you want to delete from your shopping cart.</td>
   </tr>
 <tr>
     <td>GET</td>
@@ -102,13 +106,17 @@ Postgres is the database.
 
 ## AI Sales Management System (Future Work)
 
-AI driven solution to determine sale prices and BOGO prices of store inventory.
+AI driven solution to determine sale prices and BOGO prices of store inventory. Historical pricing and their sales will be used allowing AI to best predict future sales pricing and BOGO items.
 
-RESTful endpoints supporting when store inventory should go on sale due to calendar date.
+Microservice RESTful endpoints supporting when store inventory should go on sale due to calendar date.
 
 For example (AI is handling this):
-- Flowers and chocolate purchased between the dates (MM/DD format) 02/01 - 02/14 will have a 40% price increase.
-- Hot dogs and buns purchased between the dates (MM/DD format) 02/01 - 02/14 will NOT see a price change.
+- Flowers and chocolate purchased between the dates (MM/DD) 02/01 - 02/14 will have a 40% price increase.
+- Hot dogs and buns purchased between the dates (MM/DD) 02/01 - 02/14 will NOT see a price change.
+
+- Flowers purchased between the dates (MM/DD) 06/27 - 07/04 will have a 15% price increase and BOGO.
+- Hotdogs and buns purchased between the date (MM/DD) 06/27 - 07/04 will have a price increase of 10%.
+- Hotdogs and buns purchased between the date (MM/DD) 07/05 - 07/12 will be BOGO.
 
 Written in Python.
 
