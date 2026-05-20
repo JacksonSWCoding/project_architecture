@@ -13,7 +13,12 @@ These are supporting projects that are architectured.
 
 ## Store Management System
 
-RESTful endpoints supporting store inventory management system. Written in Java and Springboot.
+RESTful endpoints supporting store inventory management system.
+
+Written in Java and Springboot.
+
+Postgres is the database.
+
 
 <table>
   <tr style="background-color: gray;">
@@ -24,29 +29,29 @@ RESTful endpoints supporting store inventory management system. Written in Java 
   <tr>
     <td>GET</td>
     <td>/inventory/products</td>
-    <td>Developer</td>
+    <td>Returns JSON data consisting of a list of products with the name, productId, and price. </td>
   </tr>
   <tr>
     <td>POST</td>
     <td>/inventory/bogo</td>
-    <td>Designer</td>
+    <td>Input is JSON data consisting of a list of productIds that gets added to the BOGO list. Returns JSON data consisting of current list of BOGOs.</td>
   </tr>
 <tr>
     <td>GET</td>
     <td>/inventory/bogos</td>
-    <td>Designer</td>
+    <td>Returns JSON data consisting of products listed as BOGO.</td>
   </tr>
 <tr>
     <td>DELETE</td>
     <td>/inventory/bogos</td>
-    <td>Designer</td>
+    <td>Input is JSON data consisting of deleted productIds from BOGO list. Returns the remaining list of BOGOs.</td>
   </tr>
 </table>
 
 
-![Architecture Diagram](images/development.png)
+![Local Architecture Diagram](images/development.png)
 
-![Architecture Diagram](images/deployed.png)
+![AWS Architecture Diagram](images/deployed.png)
 
 
 ## Customer Management System
