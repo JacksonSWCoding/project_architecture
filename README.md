@@ -72,27 +72,27 @@ Postgres is the database.
   <tr>
     <td>GET</td>
     <td>/api/Inventory</td>
-    <td> </td>
+    <td> Returns JSON data consisting of groceries available to purchase.</td>
   </tr>
   <tr>
     <td>POST</td>
     <td>/api/ShoppingCart/AddItem</td>
-    <td> </td>
+    <td> Input is JSON data consisting your cartId, productId, and productCount you're willing to insert to shopping cart.</td>
   </tr>
 <tr>
     <td>DELETE</td>
     <td>/api/ShoppingCart/FromShoppingCart</td>
-    <td> </td>
+    <td> Input is JSON data consisting your cartId, productID, and productCount you're willing to delete from your shopping cart.</td>
   </tr>
 <tr>
     <td>GET</td>
     <td>/api/ShoppingCart</td>
-    <td> </td>
+    <td> Returns JSON data consisting the products listed in your shopping cart. </td>
   </tr>
 <tr>
     <td>POST</td>
     <td>/api/ShoppingCart/Purchase</td>
-    <td> </td>
+    <td> Returns JSON data consisting the cartId and the total price of all items in your shopping cart. </td>
   </tr>
 </table>
 
@@ -100,7 +100,7 @@ Postgres is the database.
 
 ![AWS Architecture Diagram](images/deployed.png)
 
-## AI Sales Management System (future work)
+## AI Sales Management System (Future Work)
 
 AI driven solution to determine sale prices and BOGO prices of store inventory.
 
