@@ -54,10 +54,51 @@ Postgres is the database.
 ![AWS Architecture Diagram](images/deployed.png)
 
 
-## Customer Management System
+## Customer Management System (In Progress)
 
-RESTful endpoints supporting shopping cart management system. Written in C#.
+RESTful endpoints supporting shopping cart management system.
 
+Written in C#.
+
+Postgres is the database.
+
+
+<table>
+  <tr style="background-color: gray;">
+    <th>Verb</th>
+    <th>Endpoint</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>GET</td>
+    <td>/api/Inventory</td>
+    <td> </td>
+  </tr>
+  <tr>
+    <td>POST</td>
+    <td>/api/ShoppingCart/AddItem</td>
+    <td> </td>
+  </tr>
+<tr>
+    <td>DELETE</td>
+    <td>/api/ShoppingCart/FromShoppingCart</td>
+    <td> </td>
+  </tr>
+<tr>
+    <td>GET</td>
+    <td>/api/ShoppingCart</td>
+    <td> </td>
+  </tr>
+<tr>
+    <td>POST</td>
+    <td>/api/ShoppingCart/Purchase</td>
+    <td> </td>
+  </tr>
+</table>
+
+![Local Architecture Diagram](images/development.png)
+
+![AWS Architecture Diagram](images/deployed.png)
 
 ## AI Sales Management System (future work)
 
