@@ -43,6 +43,12 @@ RESTful endpoints supporting store inventory management system. Written in Java 
   </tr>
 </table>
 
+
+![Architecture Diagram](images/development.png)
+
+![Architecture Diagram](images/deployed.png)
+
+
 ## Customer Management System
 
 RESTful endpoints supporting shopping cart management system. Written in C#.
